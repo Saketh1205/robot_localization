@@ -1,0 +1,29 @@
+digraph G {
+"base_link" -> "link_steer_fl"[label=" Broadcaster: /state_publisher\nAverage rate: 80.924\nBuffer length: 4.98\nMost recent transform: 877.807\nOldest transform: 872.827\n"];
+"odom" -> "base_link"[label=" Broadcaster: /ukf_se\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "link_steer_fr"[label=" Broadcaster: /state_publisher\nAverage rate: 80.924\nBuffer length: 4.98\nMost recent transform: 877.807\nOldest transform: 872.827\n"];
+"link_steer_fl" -> "link_wheel_fl"[label=" Broadcaster: /state_publisher\nAverage rate: 80.924\nBuffer length: 4.98\nMost recent transform: 877.807\nOldest transform: 872.827\n"];
+"link_steer_fr" -> "link_wheel_fr"[label=" Broadcaster: /state_publisher\nAverage rate: 80.924\nBuffer length: 4.98\nMost recent transform: 877.807\nOldest transform: 872.827\n"];
+"base_link" -> "link_wheel_rl"[label=" Broadcaster: /state_publisher\nAverage rate: 80.924\nBuffer length: 4.98\nMost recent transform: 877.807\nOldest transform: 872.827\n"];
+"base_link" -> "link_wheel_rr"[label=" Broadcaster: /state_publisher\nAverage rate: 80.924\nBuffer length: 4.98\nMost recent transform: 877.807\nOldest transform: 872.827\n"];
+"base_footprint" -> "camera_back_optical"[label=" Broadcaster: /state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_back_optical" -> "camera_back"[label=" Broadcaster: /state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_footprint" -> "camera_front_optical"[label=" Broadcaster: /state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_front_optical" -> "camera_front"[label=" Broadcaster: /state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_footprint" -> "camera_left_optical"[label=" Broadcaster: /state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_left_optical" -> "camera_left"[label=" Broadcaster: /state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_footprint" -> "camera_right_optical"[label=" Broadcaster: /state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_right_optical" -> "camera_right"[label=" Broadcaster: /state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "gps"[label=" Broadcaster: /gpslink_baslink_broadcaster\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "imu"[label=" Broadcaster: /imulink_baslink_broadcaster\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"os1_sensor" -> "os1_imu"[label=" Broadcaster: /state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_footprint" -> "os1_sensor"[label=" Broadcaster: /state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"os1_sensor" -> "os1_lidar"[label=" Broadcaster: /state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "odom"[label=" Broadcaster: /odomlink_baslink_broadcaster\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "map"[label=" Broadcaster: /LidarOccGrid_baslink_broadcaster\nAverage rate: 10.19\nBuffer length: 4.907\nMost recent transform: 877.852\nOldest transform: 872.945\n"];
+"base_link" -> "occgrid"[label=" Broadcaster: /LaneOccGrid_baslink_broadcaster\nAverage rate: 10.183\nBuffer length: 4.812\nMost recent transform: 877.826\nOldest transform: 873.014\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 877.837"[ shape=plaintext ] ;
+}->"base_footprint";
+}
